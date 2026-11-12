@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -Wall -Wextra
+TARGET = server_1727
+
+all: $(TARGET)
+
+$(TARGET): server_1727.c
+	$(CC) $(CFLAGS) -o $(TARGET) server_1727.c
+
+clean:
+	rm -f $(TARGET)
